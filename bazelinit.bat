@@ -1,10 +1,10 @@
 @echo off
-set /p prjName=Enter the project name: 
+set /p prjName=Enter the project name:
 echo workspace(name = "%prjName%") > WORKSPACE.bazel
 echo load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive") > WORKSPACE.bazel
 
 
-set /p bzlVer=Enter the bazel version: 
+set /p bzlVer=Enter the bazel version:
 echo %bzlVer% > .bazelversion
 
 type NUL > .bazelrc
